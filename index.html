@@ -158,8 +158,8 @@
 
                     if (username != null && username != "" && username != undefined) {
                         try {
-                            window.open("http://localhost:8080/login?username=" + username + "&secretkey=" + secretkey, '_blank').focus();
-                            fetch("http://localhost:8080/api/listener?username=" + username, {
+                            window.open("https://mhauth.herokuapp.com/login?username=" + username + "&secretkey=" + secretkey, '_blank').focus();
+                            fetch("https://mhauth.herokuapp.com/api/listener?username=" + username, {
                                 headers: {
                                     "secretkey": secretkey,
                                 },
